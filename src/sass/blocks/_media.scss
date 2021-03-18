@@ -2,6 +2,12 @@
     .promo {
         padding: 10px 20px;
     }
+    .consultation {
+        padding-left: 20px;
+    }
+    .title_left {
+        font-size: 30px;
+    }
 }
 
 @media (max-width:767px) {
@@ -18,11 +24,14 @@
        }
    }  
    .privilege {
-    &__wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }    
     }
-}
+    .title_left {
+        font-size: 25px;
+    }
 }
 
 @media (max-width:575px) {
@@ -30,9 +39,12 @@
         &__phone {
             font-size: 12px;
         }
+        &__contacts {
+            margin-left: 8px;
+        }
     }
-    .button {
-        margin-left: 8px;
+    
+    .button {        
         width: 120px;
         font-size: 9px;
     }
@@ -64,13 +76,36 @@
             margin-top: 15px;
         }
     }
-    .privilege {
-        &__title {
-            font-size: 22px;
-        }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .privilege {        
         &__wrapper {
             flex-wrap: wrap;
             justify-content: center;
         }
     }
+
+    .title_left {
+        font-size: 19px;        
+    }
+
+    .consultation {
+        &__descr {
+            font-size: 14px;
+        }
+    }
+
+    .feed-form {
+        width: 290px;
+    }
+
+    .button_submit {
+        width: 290px;
+        margin: 0;
+        font-size: 14px;
+    }
+
 }

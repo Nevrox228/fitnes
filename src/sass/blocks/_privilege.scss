@@ -1,20 +1,14 @@
 .privilege {
     padding: 70px 0 65px 0;
-    background-color: #F6F6F6;
-    &__title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;        
-        font-style: normal;
-        margin-bottom: 60px;
-    }
+    background-color: #F6F6F6;    
     &__wrapper {
+        padding-top: 60px;
         display: flex;
         justify-content: space-between;
         text-align: center;
     }
     &__items {
-        width: 270px;
+        width: 290px;
         padding: 10px;
         img {
             margin-bottom: 35px;
