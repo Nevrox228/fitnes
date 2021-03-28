@@ -28,7 +28,7 @@
                     <div class="header__phone">
                         <a href="tel:+74999228974"> +7 (499) 922-89-74</a>
                     </div>
-                    <button class="button">
+                    <button data-modal="consultation" class="button">
                         заказать звонок
                     </button>
                 </div>
@@ -51,7 +51,7 @@
                         Ответим на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">заказать КОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать КОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -103,12 +103,12 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#" class="feed-form">
+            <form action="#" class="feed-form" id="consultation-form">
                 <input name="name" required placeholder="Ваше имя " type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">                
                 
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
@@ -190,7 +190,7 @@
                         <div class="catalog-item__content catalog-item__content_activ ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT2
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -235,7 +235,7 @@
                         <div class="catalog-item__content catalog-item__content_activ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT3
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -280,7 +280,7 @@
                         <div class="catalog-item__content catalog-item__content_activ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT4
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -325,7 +325,7 @@
                         <div class="catalog-item__content catalog-item__content_activ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT5
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -370,7 +370,7 @@
                         <div class="catalog-item__content catalog-item__content_activ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT6
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -417,7 +417,7 @@
                         <div class="catalog-item__content catalog-item__content_activ ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT4
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -509,7 +509,7 @@
                         <div class="catalog-item__content catalog-item__content_activ">                            
                             <img src="img/photo.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">
-                                Пульсометр Polar FT1
+                                Пульсометр Polar FT8
                             </div>
                             <div class="catalog-item__descr">
                                 Для первых шагов в тренировках, основанных на сердечном ритме
@@ -593,12 +593,64 @@
 
     <footer class="footer">
         <div class="footer__map">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.85464360984!2d30.571702954569666!3d46.45988648661949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjUwMDA!5e0!3m2!1sru!2spl!4v1616526217829!5m2!1sru!2spl" width="100%" height="660" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+
         <div class="footer__info">
-            
+            <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+            <a class="footer__tel" href="tel:84999228974">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item">
+                    <img src="icons/social/facebook.svg" alt="facebook">
+                </a>
+                
+                <a href="#" class="footer__social-item">
+                    <img src="icons/social/instagram.png" alt="instagram">
+                </a>
+
+                <a href="#" class="footer__social-item">
+                    <img src="icons/social/pinterest.png" alt="pinterest">
+                </a>
+                
+            </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name" required placeholder="Ваше имя " type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">                
+                
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name"  placeholder="Ваше имя " type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email"  placeholder="Ваш E-mail" type="email">                
+                
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal__mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+            
+        </div>
+        
+    </div>
 
 
 
@@ -606,6 +658,8 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script> 
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 
