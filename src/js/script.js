@@ -25,7 +25,7 @@ $(document).ready(function(){
             e.preventDefault();
             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_activ');
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_activ');
-        }) 
+        }); 
     });
 
     $('.catalog-item__back').each(function(i) {
@@ -33,8 +33,8 @@ $(document).ready(function(){
             e.preventDefault();
             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_activ');
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_activ');
-        }) 
-    })       
+        }); 
+    });       
     
     // model
 
@@ -101,4 +101,23 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    // smooth scroll and pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href='#up']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    }); 
+    
+    new WOW().init();
+
 });  

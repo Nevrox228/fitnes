@@ -43,9 +43,10 @@
     .catalog {
         &__tab {
             width: 180px;
+            
         }
-        &-item {
-            margin: 0 auto;
+        &-item {           
+            padding: 10px;
         }
     }
     .reviews {
@@ -174,6 +175,23 @@
         }
         &__descr {
             font-size: 13px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 260px;
+            height: 170px;
+            padding: 20px 30px 30px 25px;           
+        }
+        &__addr {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        &__social-item { 
+            height: 38px;                           
+            img {
+                width: 20px;
+            }       
         }
     }
 

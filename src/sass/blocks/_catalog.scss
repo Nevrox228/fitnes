@@ -42,6 +42,7 @@
 	   flex-wrap: wrap; 
 	   &_activ {
 		   display: flex;
+		   justify-content: space-around;
 	   }
    }
    &-item  {
@@ -127,6 +128,10 @@
 		&_activ {
 			transform: translateX(-100%);
 			margin-right: 0px;
+		}
+		ul {
+			padding-left: 0;
+			list-style-type: none;
 		}
 		li {
 			position: relative;
